@@ -1,0 +1,37 @@
+{% extends 'pages/base.html' %}
+{% block content %}
+	<div id="fullpage">
+
+
+		<section  class="section r1" id="{{instance.id}}">
+
+			{% for instance in project_list %}
+				<div class="slide">
+					
+						<img  src="{{ instance.pic.url }}"  class="product-img">
+						
+					
+						<a href='{{ instance.get_absolute_url }}'>url</a>
+					<div class="text">{{ instance.small_desc }}</div>
+					{{ instance.title }}
+				</div>
+			{% endfor %}
+		</section>
+		<section  class="section p1" id="{{instance.id}}">
+			<h1>Skills</h1>
+			{% for skill in skill_list%}
+				<div class="slide">
+					
+					
+					<div class="text">{{ skill.skill_desc }}</div>
+					<h1>{{ skill.skill_name }}</h1>
+					
+				</div>
+			{% endfor %}
+			
+			
+		</section>
+		
+	</div>
+	
+{% endblock content%}

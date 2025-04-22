@@ -1,0 +1,31 @@
+{% extends 'pages/base.html' %}
+{% block content %}
+	<div id="fullpage">
+		<section  class="section p1" >
+			
+			{% for instance in object_list %}
+				<div class="slide">
+					<img  src="{{ instance.image.url }}"  class="product-img">
+					{{ instance.title }}
+				</div>
+			{% endfor %}
+			
+		</section>
+		{% for instance in object_list %} 
+			<section  class="section p1" id="{{instance.id}}">
+				
+				<img class="product-img" src="{{ instance.image.url }}">
+				
+				<h1>{{ instance.title }}</h1>
+				<h2 class="price">{{ instance.price }}</h2>
+				<p>{{ instance.description }}</p>
+				<a href="{{ instance.get_absolute_url }}" class="btn btn-lg btn-block btn-dark">View</a>
+				
+				
+			</section>
+		{% endfor %}
+		{% if user.is_admin %}
+			<a class="btn btn-dark register-btn" href="{% url 'product-create' %}"><strong>+</strong>Product</a>
+		{% endif %}
+	</div>
+{% endblock content%}

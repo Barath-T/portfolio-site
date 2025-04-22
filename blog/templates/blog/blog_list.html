@@ -1,0 +1,24 @@
+{% extends 'pages/base.html' %}
+
+{% block content %}
+
+	<div id="fullpage">
+
+		{% for instance in object_list %} 
+
+			<section  class="section p1" id="{{instance.id}}">
+				<a href='{{ instance.get_absolute_url }}'>
+		
+				
+<h1>{{ instance.title }}</h1>
+<p>{{ instance.description }}</p>
+
+				
+			</section>
+		{% endfor %}
+
+</div>
+
+
+
+{% endblock content%}

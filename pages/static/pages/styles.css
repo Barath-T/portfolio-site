@@ -1,0 +1,212 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+body{
+	height: 100vh;
+}
+
+/*navbar*/
+.navbar {
+    position: absolute;
+    background-color: rgba(0,0,0,1);
+
+    opacity: 100%;
+    z-index: 999;
+    
+}
+
+.navbar-nav{
+	padding-left: 4rem;
+}
+.navbar-text{
+	color:	black;
+}
+
+
+
+.chair{
+	position: absolute;
+	height: 60%;
+	top: 70%;
+	left: 70%;
+	transform: translate(-70%, -70%);
+}
+
+
+.section h1{
+	font-size: 54px;
+	position: absolute;
+	top: 20%;
+	left:50%;
+	transform: translate(-50%, -20%);
+	background: linear-gradient(to left, #87c7df, #648896);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+
+.s1{
+		background: url(images/barathbw4.png);
+/*	background-image: url("./images/background.png");*/
+	background-size: cover;
+}
+
+.s1 h1{
+	font-family: convection;
+	font-weight: 700;
+	font-size: 54px;
+	position: absolute;
+	top: 40%;
+	left: 15%;
+	background: white;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.s1 p{
+		font-size: 36px;
+		color :grey;
+		position: absolute;
+		top: 50%;
+		left: 5%;
+}
+
+.s1 slide1{
+			background: url(images/barathbw4.png);
+/*	background-image: url("./images/background.png");*/
+	background-size: cover;
+}
+.s1 slide2{
+		background: url(images/sivabw.png);
+	background-size: cover;
+/*	background: linear-gradient(to left top, #cbcbcb, white);*/
+}
+
+
+
+.s2{
+	background: url(images/sivabw.png);
+	background-size: cover;
+/*	background: linear-gradient(to left top, #cbcbcb, white);*/
+}
+
+.s2 h1{
+
+	font-family: convection;
+	font-weight: 700;
+	font-size: 54px;
+	position: absolute;
+	top: 40%;
+	left:  80%;
+	background: black;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+
+}
+.s2 p{
+		font-size: 36px;
+		color :grey;
+		position: absolute;
+		top: 50%;
+		right: 11%;
+}
+
+/*.description{
+	margin: 20%;
+	width: 50%;
+	margin-left: 5%;
+	font-size: 20px;
+}
+
+.description p{
+	margin: 50px 0;
+}
+*/
+
+
+/*PRODUCTS*/
+.product-img{
+	border-radius: 8px;
+    display: block;
+    width: auto;
+    height: 60%;
+}
+
+
+
+div .p1:nth-child(1){
+	background-color: rgb(56, 134, 89);
+}
+
+div .p1:nth-child(2){
+	background-color: rgb(129, 42, 110);
+}
+
+.div .p1:nth-child(3){
+	background-color: rgb(31, 88, 107);
+}
+
+.div .p1:nth-child(4){
+	background-color: rgb(31, 88, 107);
+}
+
+.div .p1:nth-child(5){
+	background-color: rgb(255,100,100);
+}
+
+/*BLOG*/
+.s3{
+	background-color: black;
+}
+
+footer .container-fluid{
+	text-align: center;
+	padding: 5rem 0;
+	margin: 0;
+	background-color: white;
+	color:black;
+	position: absolute;;
+
+}
+
+.social {
+    margin: 20px 10px;
+    color: grey;
+}
+
+.social:hover {
+    color: black;
+}
+
+
+
+.down-nav{
+text-align: center;
+padding-bottom: 10%;
+}
+
+
+footer hr{
+
+	height:2rem;
+	margin: 0 1rem;
+
+}
+
+.s3:hover hr{
+	background-color: white;
+}
+
+
+
+
+.btn-nav{
+	margin:0 2rem;
+}
+
+.s3 h1{
+	background-color:white	;
+}
+

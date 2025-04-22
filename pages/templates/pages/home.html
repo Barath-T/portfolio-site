@@ -1,0 +1,40 @@
+{% extends 'pages/base.html' %}
+{% block home %}
+	<div id="fullpage">
+		<section class="section s1" id="slide1">
+			
+			<h1>I'M BARATH</h1>
+
+			<p>A Professional Web Designer.</p>
+		</section>
+		<section class="section s2" id="slide 2">
+			<h1>I'M SIVA</h1>
+
+			<p>A Professional Web Developer.</p>
+		</section>
+		<section class="section s3" id="slide 3">
+
+				<h1>CHECK OUT.</h1>
+			<div class="down-nav">
+				<hr>
+				<a class="btn  btn-outline-light btn-nav " href="{% url 'product-list' %}">Products</a>
+				<a class="btn  btn-outline-light btn-nav " href="{% url 'project-list' %}">Portfolio</a>
+								<a class="btn  btn-outline-light btn-nav " href="{% url 'blog-list' %}">Blog</a>
+				<a class="btn  btn-outline-light btn-nav " href="{% url 'user-register'%}">Register</a>
+				<hr>
+			</div>
+			
+			<footer>
+				<div class="container-fluid">
+					<i class="fab fa-twitter social"></i>
+					<i class="fab fa-facebook-f social"></i>
+					<i class="fab fa-instagram social"></i>
+					<i class="fas fa-envelope social"></i>
+					<p>© Copyright 2019 SG</p>
+				</div>
+			</footer>
+		</section>
+	</div>
+	
+	
+{% endblock home %}
